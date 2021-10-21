@@ -8,6 +8,7 @@ body {
 body {
   background-image: url("images/texture1.jpg");
   background-attachment: fixed;
+  background-size: contain;
 }
 
 h1,
@@ -19,7 +20,7 @@ h2 {
 }
 
 .transparentwhite {
-  background-color: rgba(255, 255, 255, 0.663);
+  background-color: rgba(255, 255, 255, 0.444);
 }
 
 button {
@@ -72,6 +73,39 @@ header a {
   margin: 0 2vw;
 }
 
+#sitesearch {
+  position: absolute;
+  cursor: pointer;
+  right: 30vw;
+  width: 0px;
+  padding: 0;
+  border: none;
+  transition: all, 0.3s;
+  box-shadow: 0px 3px 6px rgb(184, 184, 184);
+}
+
+.searchbutton {
+  background-color: transparent;
+
+  position: absolute;
+  cursor: pointer;
+  right: 20vw;
+  font-size: 20px;
+}
+.searchbutton:hover {
+  background-color: transparent;
+}
+#sitesearchinput {
+  display: none;
+}
+
+#sitesearchinput:checked ~ #sitesearch {
+  width: 150px;
+  transition: all, 0.3s;
+  padding: 8px 5px;
+  box-shadow: 0px 3px 6px rgb(184, 184, 184);
+}
+
 #hamburgermenu,
 .formimage {
   display: none;
@@ -121,7 +155,7 @@ nav ul {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 50%;
+  height: 30%;
 }
 
 nav ul li {
@@ -225,7 +259,7 @@ footer a {
   grid-template-rows: 20px;
   grid-gap: 5vw;
   margin-top: 70px;
-  padding: 40px 0;
+  padding: 40px 10%;
   height: auto;
 }
 
@@ -234,7 +268,6 @@ footer a {
   text-align: center;
   grid-column: 1 / span 2;
   grid-row: 1 / span 4;
-  box-shadow: 0px 3px 6px rgb(184, 184, 184);
 }
 
 .calltoaction h1 {
@@ -248,7 +281,6 @@ footer a {
   background-position: center;
   grid-column: 2;
   grid-row: 5 / span 20;
-  box-shadow: 0px 3px 6px rgb(184, 184, 184);
 }
 
 .imageDesktop {
@@ -256,7 +288,6 @@ footer a {
   background-size: cover;
   grid-column: 1;
   grid-row: 7 / span 20;
-  box-shadow: 0px 3px 6px rgb(184, 184, 184);
 }
 
 /* Topp products */
@@ -265,7 +296,7 @@ footer a {
   display: grid;
   grid-gap: 40px;
   padding: 40px 0;
-  background-color: #f6e8ddbc;
+  background-color: #f6e8dd57;
   text-align: center;
 }
 
@@ -287,13 +318,17 @@ footer a {
   padding: 40px 10%;
   margin: 0;
 }
+.interviewcontainer {
+  padding: 20px;
+}
+
 .interview p {
   font-style: italic;
 }
 
 .interview img {
   width: 100%;
-  height: 500px;
+  height: 400px;
   object-fit: cover;
 }
 
@@ -354,28 +389,27 @@ footer a {
 
   .calltoaction {
     grid-column: 1;
-    grid-row: 1 / span 6;
+    grid-row: 1 / span 2;
   }
 
   .abovefold .image {
     background-image: url("images/landingpagebig.jpg");
     height: auto;
     grid-column: 2;
-    grid-row: 2 / span 10;
+    grid-row: 2 / span 6;
   }
 
   .imageDesktop {
     background-image: url("images/diningtable.jpg");
     background-size: cover;
     grid-column: 1;
-    grid-row: 7 / span 6;
+    grid-row: 3 / span 6;
   }
 
   /* topp products */
 
   .toppproducts {
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 200px 200px 200px;
     padding: 40px 10%;
   }
 

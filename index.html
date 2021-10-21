@@ -5,15 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="https://use.typekit.net/zhn2kvq.css" />
     <link rel="stylesheet" href="style.css" />
-    <!--<script
+    <script
       src="https://kit.fontawesome.com/d851272322.js"
       crossorigin="anonymous"
-    ></script>-->
+    ></script>
     <title>Home Decor</title>
   </head>
   <body>
     <header>
       <a href="index.html" class="logo"> </a>
+
+      <input type="checkbox" id="sitesearchinput" />
+      <label for="sitesearchinput" class="searchbutton">
+        <i class="fa fa-search" aria-hidden="true"></i>
+      </label>
+      <input type="search" id="sitesearch" placeholder="Search..." />
       <div class="navigation">
         <input type="checkbox" id="hamburgermenu" />
         <label for="hamburgermenu" id="hamburgerlabel" tabindex="0" role="menu">
@@ -39,7 +45,7 @@
       </div>
     </header>
     <main>
-      <div class="container abovefold">
+      <div class="abovefold transparentwhite">
         <div class="calltoaction transparentwhite">
           <h1>Discover autumn</h1>
           <button class="smoothetransition"><a href="#">Shop now</a></button>
@@ -75,14 +81,18 @@
         </div>
       </div>
       <div class="transparentwhite interview">
-        <h2>This months article</h2>
-        <p>"How I decorated my 27sqm flat"</p>
-        <img
-          src="images/intervju.jpg"
-          alt="Girl sitting on her couch, playing her guitar"
-        />
+        <div class="transparentwhite interviewcontainer">
+          <h2>This months article:</h2>
+          <p>"How I decorated my 27sqm flat"</p>
+          <img
+            src="images/intervju.jpg"
+            alt="Girl sitting on her couch, playing her guitar"
+          />
 
-        <button class="smoothetransition"><a href="#">Read article</a></button>
+          <button class="smoothetransition">
+            <a href="#">Read article</a>
+          </button>
+        </div>
       </div>
     </main>
 
