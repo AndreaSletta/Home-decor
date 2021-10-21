@@ -35,6 +35,7 @@ button {
 button a {
   text-decoration: none;
   color: black;
+  font-weight: 500;
 }
 
 button:hover {
