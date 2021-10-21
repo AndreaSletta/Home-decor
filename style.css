@@ -322,6 +322,7 @@ footer a {
 }
 .interviewcontainer {
   padding: 20px;
+  text-align: center;
 }
 
 .interview p {
@@ -430,6 +431,10 @@ footer a {
 
   .productcontainer h2 {
     margin-top: 30px;
+  }
+
+  .interviewcontainer {
+    text-align: left;
   }
 
   .interview {
