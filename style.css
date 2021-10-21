@@ -222,11 +222,11 @@ footer a {
 .abovefold {
   display: grid;
   grid-template-columns: 37.5vw 37.5vw;
-  grid-template-rows: 200px 200px 200px;
+  grid-template-rows: 200px 100px 100px;
   grid-gap: 5vw;
   margin-top: 70px;
   padding: 40px 0;
-  height: 80vh;
+  height: auto;
 }
 
 .calltoaction {
@@ -246,7 +246,7 @@ footer a {
   background-size: cover;
   background-position: center;
   grid-column: 2;
-  grid-row: 2 / span 3;
+  grid-row: 3 / span 5;
 }
 
 .imageDesktop {
@@ -343,6 +343,7 @@ footer a {
   /* Above fold*/
 
   .abovefold {
+    height: 70vh;
     grid-template-columns: 200px 1fr;
     grid-template-rows: 200px 200px;
     grid-gap: 40px;
@@ -363,12 +364,15 @@ footer a {
   .imageDesktop {
     background-image: url("images/diningtable.jpg");
     background-size: cover;
+    grid-column: 1;
+    grid-row: 2;
   }
 
   /* topp products */
 
   .toppproducts {
     grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 200px 200px 200px;
     padding: 40px 10%;
   }
 
