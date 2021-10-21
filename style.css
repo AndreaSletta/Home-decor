@@ -345,27 +345,27 @@ footer a {
   .abovefold {
     height: 70vh;
     grid-template-columns: 200px 1fr;
-    grid-template-rows: 200px 200px;
+    grid-template-rows: 15px;
     grid-gap: 40px;
   }
 
   .calltoaction {
     grid-column: 1;
-    grid-row: 1;
+    grid-row: 1 / span 6;
   }
 
   .abovefold .image {
     background-image: url("images/landingpagebig.jpg");
     height: auto;
     grid-column: 2;
-    grid-row: 1 / span 2;
+    grid-row: 2 / span 10;
   }
 
   .imageDesktop {
     background-image: url("images/diningtable.jpg");
     background-size: cover;
     grid-column: 1;
-    grid-row: 2;
+    grid-row: 7 / span 6;
   }
 
   /* topp products */
