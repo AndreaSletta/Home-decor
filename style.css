@@ -234,6 +234,7 @@ footer a {
   text-align: center;
   grid-column: 1 / span 2;
   grid-row: 1 / span 4;
+  box-shadow: 0px 3px 6px rgb(184, 184, 184);
 }
 
 .calltoaction h1 {
@@ -247,6 +248,7 @@ footer a {
   background-position: center;
   grid-column: 2;
   grid-row: 5 / span 20;
+  box-shadow: 0px 3px 6px rgb(184, 184, 184);
 }
 
 .imageDesktop {
@@ -254,6 +256,7 @@ footer a {
   background-size: cover;
   grid-column: 1;
   grid-row: 7 / span 20;
+  box-shadow: 0px 3px 6px rgb(184, 184, 184);
 }
 
 /* Topp products */
