@@ -76,7 +76,7 @@ header a {
 #sitesearch {
   position: absolute;
   cursor: pointer;
-  right: 30vw;
+  right: 6rem;
   width: 0px;
   padding: 0;
   border: none;
@@ -86,12 +86,12 @@ header a {
 
 .searchbutton {
   background-color: transparent;
-
   position: absolute;
   cursor: pointer;
-  right: 20vw;
+  right: 4rem;
   font-size: 20px;
 }
+
 .searchbutton:hover {
   background-color: transparent;
 }
@@ -122,7 +122,7 @@ header a {
   margin: 0;
   padding: 0;
   top: 20px;
-  right: 5vw;
+  right: 1rem;
   z-index: 10;
 }
 
@@ -347,7 +347,7 @@ footer a {
   }
 
   .navigation {
-    width: 100%;
+    width: 30%;
     display: flex;
     align-content: center;
     margin: 0 5vw;
